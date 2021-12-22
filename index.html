@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jqueri.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body><!--
+    <input id="enderecoCep" type="text">
+    <button onclick="consultarCep()">Consultar</button>-->
+
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">Consulta CEP</a>
+          <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="CEP" aria-label="Search" id="enderecoCep" >
+            <button class="btn btn-outline-success" type="submit " onclick="consultarCep()">CONSULTAR</button>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="text-center" style="margin-top: 100px;">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+
+      <div class="container cep" style="margin-top: 40px;">
+          <div class="row" >
+              <h3 id="tituloCep">CEP</h3>
+              <table class="table" style="margin-top: 40px;">
+                  <tbody>
+                      <tr>
+                          <td>Logradouro</td>
+                          <td id="logradouro"></td>
+                      </tr>
+                      <tr>
+                          <td>Bairro</td>
+                          <td id="bairro"></td>
+                      </tr>
+                      <tr>
+                          <td>Cidade</td>
+                          <td id="localidade"></td>
+                      </tr>
+                      <tr>
+                          <td>Estado</td>
+                          <td id="uf"></td>
+                      </tr>
+
+                  </tbody>
+              </table>
+              
+          </div>
+      </div>
+    
+</body>
+</html>
